@@ -1,0 +1,12 @@
+es\albarregas\daofactory\MySQLDAOFactory.class
+es\albarregas\dao\DireccionDAO.class
+es\albarregas\daofactory\DAOFactory.class
+es\albarregas\dao\IProfesorDAO.class
+es\albarregas\controllers\Conclusion.class
+es\albarregas\beans\Libro.class
+es\albarregas\persistencia\HibernateUtil.class
+es\albarregas\dao\ProfesorDAO.class
+es\albarregas\controllers\Controlador.class
+es\albarregas\beans\Persona.class
+es\albarregas\controllers\Eleccion.class
+es\albarregas\dao\IDireccionDAO.class

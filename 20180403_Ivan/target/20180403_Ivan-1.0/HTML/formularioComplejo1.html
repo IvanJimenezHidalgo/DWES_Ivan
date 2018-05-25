@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Formulario Complejo 1</title>
+	<link rel="stylesheet" href="../CSS/fcomplejo.css">
+</head>
+<body>
+    <h2>Formulario Complejo 1</h2>
+    <form action="../fcomplejo1" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+		<div id="iz">
+			<p><label for="nombre">Nombre</label></p>
+			<p><label>Vehículo</label></p>
+			<p><label for="avatar">Avatar</label></p>
+			<p><label for="password">Password</label></p>
+			<p><label>Comida</label></p>
+			<p><label>Bebida</label></p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<p><label for="comentarios">Comentarios</label></p>
+                        <br>
+                        <input type="submit" name="enviar" value="Enviar"/>
+		</div>
+		<div id="der">
+			<p><input type="text" name="Nombre" id="nombre"></p>
+			<p>
+				<input type="checkbox" name="Vehiculo" id="coche" value="coche"><label for="coche">Coche</label>
+				<input type="checkbox" name="Vehiculo" id="moto" value="moto"><label for="moto">Moto</label>
+				<input type="checkbox" name="Vehiculo" id="bici" value="bici"><label for="bici">Bicicleta</label>
+			</p>
+			<p><input type="file" name="Avatar" id="avatar"></p>
+			<p><input type="password" name="Password" id="password"></p>
+			<p><select name="Comida" id="comida">
+					<option value="macarrones">Macarrones</option>
+					<option value="hamburguesa">Hamburguesa</option>
+					<option value="pizza">Pizza</option>
+                                        <option value="filetes">Filetes</option>
+				</select>
+			</p>
+			<p>
+				<select name="Bebida" id="bebida" multiple size="5">
+					<option value="refesco">Refesco</option>
+					<option value="cerveza">Cerveza</option>
+					<option value="vino">Vino</option>
+					<option value="agua">Agua</option>
+					<option value="combinado">Combinado</option>
+				</select>
+			</p>
+			<p><textarea name="Comentarios" id="comentarios"></textarea></p>
+                        <input type="reset" name="limpiar" value="Limpiar"/>
+		</div>
+                
+	</form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>App EquiposDept</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+        <script src="js/scripts.js"></script>
+    </head>
+    <body>
+        <div id="contenido">
+            <h1>Escoja opción</h1>
+            <ul>
+                <li id="add"><a href="#">Añadir</a>
+                    <ul>
+                        <li class="add"><a href="inicio?op=addAl">Alumno</a></li>
+                        <li class="add"><a href="inicio?op=addEq">Equipo</a></li>
+                    </ul>
+                </li>
+                <li id="read"><a href="#">Mostrar</a>
+                    <ul>
+                        <li class="read"><a href="inicio?op=shAl">Alumnos</a></li>
+                        <li class="read"><a href="inicio?op=shEq">Equipos</a></li>
+                        <li class="read"><a href="inicio?op=shAE">Alumnos-Equipos</a></li>
+                        <li class="read"><a href="inicio?op=shES">Equipos Sin Asignar</a></li>
+                    </ul>
+                </li>
+                <li id="update"><a href="#">Actualizar</a>
+                    <ul>
+                        <li class="update"><a href="inicio?op=upAl">Alumno</a></li>
+                        <li class="update"><a href="inicio?op=upEq">Equipo</a></li>
+                    </ul>
+                </li>
+                <li id="delete"><a href="#">Eliminar</a>
+                    <ul>
+                        <li class="delete"><a href="inicio?op=deAl">Alumno</a></li>
+                        <li class="delete"><a href="inicio?op=deEq">Equipo</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

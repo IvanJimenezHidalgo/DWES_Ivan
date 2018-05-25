@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <!-- Definición de mapeo de un bean (FQCN) con la tabla correspondiente en base de datos -->
+    <class name="es.albarregas.beans.Profesor" table="profsimple">
+        <!-- Primary key 
+             name - nombre del atributo Java que es la primary key
+             type - tipo del atributo Java.
+        -->
+        <id name="id" type="integer">
+            <!-- Nombre de la columna de la tabla -->
+            <column name="idProf"/>
+            <!-- Autogenerado. Si especificamos:
+                native: permitimos a Hibernate que seleccione la estrategía adecuada
+                identity: auto_increment de mysql
+                assigned: asignado desde la aplicación -->
+            <generator class="identity"/>
+        </id>
+        <!-- Demás columnas de la tabla. En el caso de no especificarlas no se persistiran.
+             name - nombre del atributo Java
+             type - tipo del atributo Java
+             column - nombre de la columna de la tabla en la BD. Opcional si el atributo Java y la columna de la tabla se llaman igual
+             No hace falta especificar el tipo de cada una pero para aliviar el proceso de carga se pueden poner.
+             Los principales tipos son:
+                Tipos básicos de Java           Tipos SQL básicos de cada fabricante
+                String                          VARCHAR
+                Calendar,Date,Time,Timestamp    DATE, TIME, TIMESTAMP
+                BigDecimal, BigInteger          NUMERIC
+                Locale, TimeZone, Currency      VARCHAR
+                Class                           VARCHAR
+                Byte arrays                     Tipo binario de la BD (BLOB)
+                String muy largos               TEXT
+            
+             Podemos especificar que hibernate acceda directamente a los atributos Java privados con el atributo access="field".
+             Utilizando este atributo en el tag property no se necesitan implementar los métodos set and get de ese atributo Java 
+        -->
+        <property name="nombre" type="string"/>
+        <!-- Tampoco hace falta especificar el atributo column en el caso de que se llame igual el atributo del bean y la columna de la tabla -->
+        <property name="ape1" column="ape1"/>
+        <!-- Existe otro atributo para requerir que la propiedad no sea null, por defecto null -->
+        <property name="ape2" not-null="false"/>  
+    </class>
+</hibernate-mapping>

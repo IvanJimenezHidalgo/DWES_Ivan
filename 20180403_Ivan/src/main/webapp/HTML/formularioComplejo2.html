@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulario Complejo 2</title>
+        <link rel="stylesheet" href="../CSS/fcomplejo.css">
+    </head>
+    <body>
+        <h2>Formulario Complejo 2</h2>
+        <form action="../fcomplejo2" method="post" accept-charset="utf-8">
+            <div id="iz">
+                <p><label for="nombre">Nombre</label></p>
+                <p><label for="telefono">Teléfono</label></p>
+                <p><label for="email">Email</label></p>
+                <p><label for="fecha">Fecha de nacimiento</label></p>
+                <p><label>Vehículo</label></p>
+
+                <input type="submit" name="enviar" value="Enviar"/>
+            </div>
+            <div id="der">
+                <p><input type="text" name="Nombre" id="nombre" placeholder="Nombre"/></p>
+                <p><input type="text" name="Telefono" id="telefono" placeholder="666555444"/></p>
+                <p><input type="text" name="Email" id="email" placeholder="mail@server.com"/></p>
+                <p><input type="text" name="Fecha" id="fecha" placeholder="01/01/2000"/></p>
+                <p>
+                    <label for="coche">Coche</label><input type="checkbox" name="Vehiculo" id="coche" value="coche"/>
+                    <label for="moto">Moto</label><input type="checkbox" name="Vehiculo" id="moto" value="moto"/>
+                    <label for="bici">Bicicleta</label><input type="checkbox" name="Vehiculo" id="bici" value="bicicleta"/>
+                </p>
+                <input type="reset" name="limpiar" value="Limpiar"/>
+            </div>
+
+        </form>
+    </body>
+</html>

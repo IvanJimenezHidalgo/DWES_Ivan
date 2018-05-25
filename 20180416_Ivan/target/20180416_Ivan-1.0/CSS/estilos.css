@@ -1,0 +1,13 @@
+#contenido{
+    width: 60%;
+    margin-left: 20%;
+    padding-left: 10%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color:white;
+    background:blue;
+}

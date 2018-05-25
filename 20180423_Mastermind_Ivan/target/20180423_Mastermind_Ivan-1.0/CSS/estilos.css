@@ -1,0 +1,15 @@
+#contenido{
+    width: 60%;
+    margin-left: 20%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: white;
+    background: blue;
+}
+.num{
+    width: 2em;
+}

@@ -1,0 +1,8 @@
+es\albarregas\controllers\Añadir.class
+es\albarregas\controllers\ElecAct.class
+es\albarregas\controllers\Actualizar.class
+es\albarregas\connection\Conexion.class
+es\albarregas\controllers\Eliminar.class
+es\albarregas\beans\Ave.class
+es\albarregas\controllers\Leer.class
+es\albarregas\controllers\Crear.class

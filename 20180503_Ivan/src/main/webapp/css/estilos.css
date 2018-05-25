@@ -1,0 +1,35 @@
+#contenido{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    background-color: blue;
+}
+ul{
+    text-align: left;
+    margin-left: 15%;
+    list-style: none;
+}
+ul ul{
+    margin-left: 5%;
+}
+.add,.read,.update,.delete{
+    display: none;
+}
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+thead tr{
+    background: lightblue;
+}
+form{
+    margin-left: 25%;
+    text-align: left;
+}

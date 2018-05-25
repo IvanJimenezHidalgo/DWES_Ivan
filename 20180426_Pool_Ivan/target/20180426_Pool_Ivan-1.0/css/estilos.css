@@ -1,0 +1,22 @@
+#contenido{
+    width: 80%;
+    margin-left: 10%;
+    padding: 2%;
+    text-align: center;
+}
+ul{
+    text-align: left;
+    margin-left: 25%;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: white;
+    background-color: blue;
+}
+table{
+    margin: 0 auto;
+}
